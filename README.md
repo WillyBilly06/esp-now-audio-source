@@ -33,10 +33,6 @@ Each packet carries 96 stereo sample-pairs (~2 ms of audio), plus a small header
 - **ESP32 dev board** (dual-core, any variant with enough GPIOs)
 - **PCM1808 ADC module** -- stereo 24-bit audio ADC, I2S/left-justified output
 
-<p align="center">
-  <img src="docs/images/pcm1808.jpg" alt="PCM1808 ADC module" width="300"/>
-</p>
-
 ### Wiring
 
 | PCM1808 Pin | ESP32 GPIO | Function       |
@@ -80,7 +76,7 @@ On Windows with PowerShell:
 ```powershell
 D:\esp-idf\export.ps1
 idf.py build
-idf.py -p COM10 flash monitor
+idf.py -p COMXX flash monitor
 ```
 
 ---

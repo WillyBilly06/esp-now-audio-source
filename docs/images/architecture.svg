@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1.5" stdDeviation="1.5" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#455a64"/>
+    </marker>
+    <marker id="arrowWifi" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff9800"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#212529">System Architecture</text>
+
+  <!-- Audio In -->
+  <rect x="20" y="90" width="120" height="100" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="80" y="125" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">Audio Input</text>
+  <text x="80" y="145" text-anchor="middle" font-size="10" fill="#1565c0">Analog L/R</text>
+  <text x="80" y="162" text-anchor="middle" font-size="10" fill="#1565c0">Line / Mic</text>
+
+  <!-- PCM1808 -->
+  <rect x="180" y="90" width="120" height="100" rx="8" fill="#e8eaf6" stroke="#283593" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="240" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#1a237e">PCM1808</text>
+  <text x="240" y="140" text-anchor="middle" font-size="10" fill="#3949ab">24-bit ADC</text>
+  <text x="240" y="156" text-anchor="middle" font-size="10" fill="#3949ab">48 kHz Stereo</text>
+  <text x="240" y="172" text-anchor="middle" font-size="10" fill="#3949ab">I2S Output</text>
+
+  <!-- ESP32 Source -->
+  <rect x="340" y="70" width="160" height="140" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="420" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">ESP32 Source</text>
+  <line x1="355" y1="108" x2="485" y2="108" stroke="#a5d6a7" stroke-width="0.5"/>
+  <text x="420" y="128" text-anchor="middle" font-size="10" fill="#2e7d32">I2S RX (APLL)</text>
+  <text x="420" y="146" text-anchor="middle" font-size="10" fill="#2e7d32">ADPCM Encode</text>
+  <text x="420" y="164" text-anchor="middle" font-size="10" fill="#2e7d32">Packet Assembly</text>
+  <text x="420" y="182" text-anchor="middle" font-size="10" fill="#2e7d32">ESP-NOW TX</text>
+  <text x="420" y="198" text-anchor="middle" font-size="9" fill="#66bb6a">Core 1: Audio  |  Core 0: Status</text>
+
+  <!-- Wireless -->
+  <rect x="540" y="100" width="100" height="80" rx="40" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="590" y="137" text-anchor="middle" font-size="11" font-weight="700" fill="#e65100">ESP-NOW</text>
+  <text x="590" y="155" text-anchor="middle" font-size="9" fill="#f57c00">Ch 11 Broadcast</text>
+  <text x="590" y="170" text-anchor="middle" font-size="9" fill="#f57c00">115 B / 2 ms</text>
+
+  <!-- ESP32 Sink label -->
+  <rect x="680" y="100" width="100" height="80" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="730" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="#b71c1c">Sink</text>
+  <text x="730" y="153" text-anchor="middle" font-size="10" fill="#c62828">ESP-NOW RX</text>
+  <text x="730" y="170" text-anchor="middle" font-size="10" fill="#c62828">&#x2192; PCM5102A</text>
+
+  <!-- Arrows -->
+  <line x1="140" y1="140" x2="175" y2="140" stroke="#455a64" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="157" y="133" text-anchor="middle" font-size="8" fill="#78909c">Analog</text>
+
+  <line x1="300" y1="140" x2="335" y2="140" stroke="#455a64" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="317" y="133" text-anchor="middle" font-size="8" fill="#78909c">I2S</text>
+
+  <line x1="500" y1="140" x2="535" y2="140" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowWifi)"/>
+
+  <line x1="640" y1="140" x2="675" y2="140" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowWifi)"/>
+
+  <!-- Footer -->
+  <text x="400" y="248" text-anchor="middle" font-size="11" fill="#757575">Connectionless broadcast -- no pairing, no handshake, no encryption</text>
+  <text x="400" y="266" text-anchor="middle" font-size="10" fill="#9e9e9e">Each packet carries predictor state + timestamp for stateless decode and clock sync</text>
+</svg>

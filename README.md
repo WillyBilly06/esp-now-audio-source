@@ -4,6 +4,14 @@ Wireless audio transmitter built on the ESP32. Captures stereo audio from a PCM1
 
 ---
 
+## Architecture
+
+<p align="center">
+  <img src="docs/images/architecture.svg" alt="System Architecture" width="780" />
+</p>
+
+---
+
 ## Overview
 
 This is one half of a wireless audio link. The source board reads 48 kHz / 24-bit stereo PCM from a PCM1808, encodes each frame into IMA ADPCM (roughly 12:1 compression), and sends it as a broadcast ESP-NOW packet. No pairing or handshake is needed -- any sink on the same Wi-Fi channel will pick it up.
@@ -34,6 +42,10 @@ Each packet carries 96 stereo sample-pairs (~2 ms of audio), plus a small header
 - **PCM1808 ADC module** -- stereo 24-bit audio ADC, I2S/left-justified output
 
 ### Wiring
+
+<p align="center">
+  <img src="docs/images/wiring.svg" alt="ESP32 to PCM1808 Wiring" width="700" />
+</p>
 
 | PCM1808 Pin | ESP32 GPIO | Function       |
 |-------------|------------|----------------|

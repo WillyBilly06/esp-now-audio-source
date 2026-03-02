@@ -1,0 +1,67 @@
+menu "OpenALS Source"
+
+    config SOFTAP_SSID
+        string "SoftAP SSID"
+        default "ALS_TX"
+        help
+            SSID of the access point that phones/laptops connect to
+            for receiving the UDP audio stream.
+
+    config SOFTAP_PASSWORD
+        string "SoftAP Password"
+        default "openals123"
+        help
+            WPA2 password for the access point.  Leave empty for an
+            open (no password) network.  Must be at least 8 characters
+            when set.
+
+    config SOURCE_AP_IP_C
+        int "SoftAP subnet third octet"
+        range 1 254
+        default 50
+        help
+            SoftAP uses 192.168.<this>.1/24. Change this if it conflicts
+            with your upstream router LAN.
+
+    config AUDIO_QUEUE_LEN
+        int "Audio queue length (frames)"
+        range 4 32
+        default 12
+        help
+            Number of encoded frames buffered before send task.
+
+    config AUDIO_TX_TOKENS
+        int "ESP-NOW TX token count"
+        range 4 32
+        default 16
+        help
+            Max in-flight ESP-NOW sends before backpressure.
+
+    config AUDIO_TASK_PRIO_CAP_ENC
+        int "Capture+encode task priority"
+        range 1 23
+        default 7
+
+    config AUDIO_TASK_PRIO_SEND
+        int "Send task priority"
+        range 1 23
+        default 8
+
+    choice ESPNOW_RATE
+        prompt "ESP-NOW PHY rate"
+        default ESPNOW_RATE_12M
+        help
+            Higher rates reduce airtime but can be less robust at weak signal.
+
+        config ESPNOW_RATE_6M
+            bool "6 Mbps"
+
+        config ESPNOW_RATE_12M
+            bool "12 Mbps"
+
+        config ESPNOW_RATE_24M
+            bool "24 Mbps"
+
+    endchoice
+
+endmenu

@@ -1,0 +1,114 @@
+Command: C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\Bluetooth Project\esp-idf\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\esp-now-audio-source\build\espnow_audio_source.elf D:\esp-now-audio-source\build\bootloader\bootloader.elf --force-color -m 'C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\Bluetooth Project\esp-idf\tools\idf.py' '-p' 'COM6'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:63�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF 8f98866d-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 19 2026 15:58:23[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2762ch (161324) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=00037654 vaddr=3ffb0000 size=04154h ( 16724) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0003b7b0 vaddr=40080000 size=04868h ( 18536) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8c5f0h (574960) map[0m
+[0;32mI (353) esp_image: segment 4: paddr=000cc618 vaddr=40084868 size=13e10h ( 81424) load[0m
+[0;32mI (385) esp_image: segment 5: paddr=000e0430 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (397) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (397) boot: Disabling RNG early entropy source...[0m
+[0;32mI (407) cpu_start: Multicore app[0m
+[0;32mI (416) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (416) cpu_start: Pro cpu start user code[0m
+[0;32mI (416) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (418) app_init: Application information:[0m
+[0;32mI (422) app_init: Project name:     espnow_audio_source[0m
+[0;32mI (426) app_init: App version:      539a121-dirty[0m
+[0;32mI (431) app_init: Compile time:     Feb 19 2026 15:58:17[0m
+[0;32mI (436) app_init: ELF file SHA256:  591c84339...[0m
+[0;32mI (440) app_init: ESP-IDF:          8f98866d-dirty[0m
+[0;32mI (445) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (449) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (453) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (457) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (463) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFBCEA8 len 00023158 (140 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (478) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (484) heap_init: At 40098678 len 00007988 (30 KiB): IRAM[0m
+[0;33mW (490) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (506) spi_flash: flash io: dio[0m
+[0;33mW (509) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (522) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (527) SRC: ESP-NOW LC3 SOURCE (room=0x7F ch=6)[0m
+[0;32mI (544) wifi:wifi driver task: 3ffc4ecc, prio:23, stack:6656, core=0[0m
+[0;32mI (550) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (550) wifi:wifi certification version: v7.0[0m
+[0;32mI (550) wifi:config NVS flash: enabled[0m
+[0;32mI (551) wifi:config nano formatting: disabled[0m
+[0;32mI (556) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (560) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (564) wifi:Init management short buffer num: 32[0m
+[0;32mI (569) wifi:Init dynamic tx buffer num: 64[0m
+[0;32mI (573) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (577) wifi:Init static rx buffer num: 16[0m
+[0;32mI (581) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (586) wifi_init: rx ba win: 32[0m
+[0;32mI (587) wifi_init: accept mbox: 6[0m
+[0;32mI (590) wifi_init: tcpip mbox: 32[0m
+[0;32mI (593) wifi_init: udp mbox: 6[0m
+[0;32mI (596) wifi_init: tcp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp tx win: 5760[0m
+[0;32mI (602) wifi_init: tcp rx win: 5760[0m
+[0;32mI (605) wifi_init: tcp mss: 1440[0m
+[0;32mI (608) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (612) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (783) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (850) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (901) wifi:mode : softAP (c8:2e:18:ef:e2:d9)[0m
+[0;32mI (906) wifi:Total power save buffer number: 32[0m
+[0;32mI (907) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (908) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (911) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (915) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (915) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (918) SRC: SoftAP "ALS_TX" ch 6 + ESP-NOW ready[0m
+[0;32mI (932) SRC: LC3 encoder ready (10000us, 48000Hz, 56B/ch)[0m
+[0;32mI (933) SRC: UDP listening on port 5000[0m
+[0;32mI (937) SRC: I2S RX ready (PCM1808) @ 48000 Hz[0m
+[0;32mI (933) main_task: Returned from app_main()[0m
+[0;32mI (44042) wifi:new:<6,1>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (44044) wifi:station: f0:d4:15:a6:7c:46 join, AID=1, bgn, 40U[0m
+[0;32mI (44733) wifi:<ba-add>idx:2 (ifx:1, f0:d4:15:a6:7c:46), tid:0, ssn:14, winSize:64[0m
+[0;32mI (47651) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (100607) wifi:station: f0:d4:15:a6:7c:46 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffbe25c[0m
+[0;32mI (100609) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (100615) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (100618) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (134303) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (134305) wifi:station: 26:9b:cd:8b:86:f2 join, AID=1, bgn, 20[0m
+[0;32mI (134550) wifi:<ba-add>idx:2 (ifx:1, 26:9b:cd:8b:86:f2), tid:0, ssn:0, winSize:64[0m
+[0;32mI (134617) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m

@@ -1,0 +1,34 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\esp-now-audio-source\build\bootloader\esp-idf\esptool_py && C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe "D:/Bluetooth Project/esp-idf/components/partition_table/check_sizes.py" --offset 0x8000 bootloader 0x1000 D:/esp-now-audio-source/build/bootloader/bootloader.bin"
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main_adpcm.c.obj
+D:/esp-now-audio-source/main/main_adpcm.c:357:13: warning: 'clear_wifi_credentials' defined but not used [-Wunused-function]
+  357 | static void clear_wifi_credentials(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable espnow_audio_source.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/esp-now-audio-source/build/espnow_audio_source.bin
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D D:\esp-now-audio-source\build\esp-idf\esptool_py && C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe "D:/Bluetooth Project/esp-idf/components/partition_table/check_sizes.py" --offset 0x8000 partition --type app D:/esp-now-audio-source/build/partition_table/partition-table.bin D:/esp-now-audio-source/build/espnow_audio_source.bin"
+espnow_audio_source.bin binary size 0xdd780 bytes. Smallest app partition is 0x100000 bytes. 0x22880 bytes (13%) free.
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D "D:\Bluetooth Project\esp-idf\components\esptool_py" && C:\Users\ngocv\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D "IDF_PATH=D:/Bluetooth Project/esp-idf" -D "SERIAL_TOOL=C:/Users/ngocv/.espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;D:/Bluetooth Project/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/esp-now-audio-source/build -P "D:/Bluetooth Project/esp-idf/components/esptool_py/run_serial_tool.cmake""
+esptool.py --chip esp32 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 espnow_audio_source.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM6
+
+A fatal error occurred: Could not open COM6, the port is busy or doesn't exist.
+(could not open port 'COM6': PermissionError(13, 'Access is denied.', None, 5))
+
+Hint: Check if the port is not used by another task
+
+FAILED: CMakeFiles/flash D:/esp-now-audio-source/build/CMakeFiles/flash 
+C:\Windows\system32\cmd.exe /C "cd /D "D:\Bluetooth Project\esp-idf\components\esptool_py" && C:\Users\ngocv\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D "IDF_PATH=D:/Bluetooth Project/esp-idf" -D "SERIAL_TOOL=C:/Users/ngocv/.espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;D:/Bluetooth Project/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/esp-now-audio-source/build -P "D:/Bluetooth Project/esp-idf/components/esptool_py/run_serial_tool.cmake""
+ninja: build stopped: subcommand failed.

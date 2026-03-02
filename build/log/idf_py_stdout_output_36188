@@ -1,0 +1,2 @@
+Command: C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\Bluetooth Project\esp-idf\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\esp-now-audio-source\build\espnow_audio_source.elf D:\esp-now-audio-source\build\bootloader\bootloader.elf --force-color -m 'C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\Bluetooth Project\esp-idf\tools\idf.py' '-p' 'COM6'
+could not open port '\\\\.\\COM6': PermissionError(13, 'Access is denied.', None, 5)

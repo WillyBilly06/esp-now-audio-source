@@ -1,0 +1,74 @@
+Command: ninja flash
+[1/13] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\esp-now-audio-source\build\bootloader\esp-idf\esptool_py && C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe "D:/Bluetooth Project/esp-idf/components/partition_table/check_sizes.py" --offset 0x8000 bootloader 0x1000 D:/esp-now-audio-source/build/bootloader/bootloader.bin"
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/13] No install step for 'bootloader'
+[3/13] Completed 'bootloader'
+[4/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/source_app.c.obj
+[5/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi/source_wifi.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/wifi/source_wifi.c.obj 
+ccache C:\Users\ngocv\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20251107\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"8f98866d-dirty\" -DLC3_PLUS=0 -DLC3_PLUS_HR=0 -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/esp-now-audio-source/build/config -ID:/esp-now-audio-source/main -I"D:/Bluetooth Project/esp-idf/components/newlib/platform_include" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/include/freertos" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos" -I"D:/Bluetooth Project/esp-idf/components/freertos/esp_additions/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include/soc" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include/soc/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/dma/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/ldo/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/debug_probe/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/mspi_timing_tuning/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/power_supply/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/port/esp32/." -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/port/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/heap/include" -I"D:/Bluetooth Project/esp-idf/components/heap/tlsf" -I"D:/Bluetooth Project/esp-idf/components/log/include" -I"D:/Bluetooth Project/esp-idf/components/soc/include" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32/register" -I"D:/Bluetooth Project/esp-idf/components/hal/platform_port/include" -I"D:/Bluetooth Project/esp-idf/components/hal/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/hal/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32/include/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_common/include" -I"D:/Bluetooth Project/esp-idf/components/esp_system/include" -I"D:/Bluetooth Project/esp-idf/components/esp_system/port/soc" -I"D:/Bluetooth Project/esp-idf/components/esp_system/port/include/private" -I"D:/Bluetooth Project/esp-idf/components/xtensa/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/xtensa/deprecated_include" -I"D:/Bluetooth Project/esp-idf/components/lwip/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/include/apps" -I"D:/Bluetooth Project/esp-idf/components/lwip/include/apps/sntp" -I"D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/freertos/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include/arch" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include/sys" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/include/local" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/wifi_apps/include" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/wifi_apps/nan_app/include" -I"D:/Bluetooth Project/esp-idf/components/esp_event/include" -I"D:/Bluetooth Project/esp-idf/components/esp_phy/include" -I"D:/Bluetooth Project/esp-idf/components/esp_phy/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_netif/include" -I"D:/Bluetooth Project/esp-idf/components/esp_timer/include" -I"D:/Bluetooth Project/esp-idf/components/driver/deprecated" -I"D:/Bluetooth Project/esp-idf/components/driver/i2c/include" -I"D:/Bluetooth Project/esp-idf/components/driver/touch_sensor/include" -I"D:/Bluetooth Project/esp-idf/components/driver/twai/include" -I"D:/Bluetooth Project/esp-idf/components/driver/touch_sensor/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_pm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_ringbuf/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_gpio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_pcnt/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_gptimer/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_spi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_mcpwm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_ana_cmpr/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_i2s/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdmmc/include" -I"D:/Bluetooth Project/esp-idf/components/sdmmc/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdspi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_dac/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_rmt/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_tsens/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_i2c/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_uart/include" -I"D:/Bluetooth Project/esp-idf/components/vfs/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_ledc/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_parlio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_usb_serial_jtag/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_twai/include" -I"D:/Bluetooth Project/esp-idf/components/nvs_flash/include" -I"D:/Bluetooth Project/esp-idf/components/esp_partition/include" -I"D:/Bluetooth Project/esp-idf/components/esp_http_server/include" -I"D:/Bluetooth Project/esp-idf/components/http_parser" -ID:/esp-now-audio-source/components/liblc3/include -ID:/esp-now-audio-source/components/liblc3/src -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/esp-now-audio-source=. "-fmacro-prefix-map=D:/Bluetooth Project/esp-idf=/IDF" -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/wifi/source_wifi.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\wifi\source_wifi.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/wifi/source_wifi.c.obj -c D:/esp-now-audio-source/main/wifi/source_wifi.c
+D:/esp-now-audio-source/main/wifi/source_wifi.c: In function 'runtime_ws_handler':
+D:/esp-now-audio-source/main/wifi/source_wifi.c:231:5: error: unknown type name 'httpd_ws_frame_t'
+  231 |     httpd_ws_frame_t ws_pkt = {0};
+      |     ^~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:232:11: error: request for member 'type' in something not a structure or union
+  232 |     ws_pkt.type = HTTPD_WS_TYPE_TEXT;
+      |           ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:232:19: error: 'HTTPD_WS_TYPE_TEXT' undeclared (first use in this function); did you mean 'HTTPD_TYPE_TEXT'?
+  232 |     ws_pkt.type = HTTPD_WS_TYPE_TEXT;
+      |                   ^~~~~~~~~~~~~~~~~~
+      |                   HTTPD_TYPE_TEXT
+D:/esp-now-audio-source/main/wifi/source_wifi.c:232:19: note: each undeclared identifier is reported only once for each function it appears in
+D:/esp-now-audio-source/main/wifi/source_wifi.c:233:21: error: implicit declaration of function 'httpd_ws_recv_frame' [-Wimplicit-function-declaration]
+  233 |     esp_err_t ret = httpd_ws_recv_frame(req, &ws_pkt, 0);
+      |                     ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:235:15: error: request for member 'len' in something not a structure or union
+  235 |     if (ws_pkt.len == 0) return ESP_OK;
+      |               ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:237:36: error: request for member 'len' in something not a structure or union
+  237 |     uint8_t *buf = calloc(1, ws_pkt.len + 1);
+      |                                    ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:239:11: error: request for member 'payload' in something not a structure or union
+  239 |     ws_pkt.payload = buf;
+      |           ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:240:51: error: request for member 'len' in something not a structure or union
+  240 |     ret = httpd_ws_recv_frame(req, &ws_pkt, ws_pkt.len);
+      |                                                   ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:259:5: error: unknown type name 'httpd_ws_frame_t'
+  259 |     httpd_ws_frame_t tx_pkt = {
+      |     ^~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:260:9: error: field name not in record or union initializer
+  260 |         .type = HTTPD_WS_TYPE_TEXT,
+      |         ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:260:9: note: (near initialization for 'tx_pkt')
+D:/esp-now-audio-source/main/wifi/source_wifi.c:261:9: error: field name not in record or union initializer
+  261 |         .payload = (uint8_t *)out,
+      |         ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:261:9: note: (near initialization for 'tx_pkt')
+D:/esp-now-audio-source/main/wifi/source_wifi.c:261:20: warning: excess elements in scalar initializer
+  261 |         .payload = (uint8_t *)out,
+      |                    ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:261:20: note: (near initialization for 'tx_pkt')
+D:/esp-now-audio-source/main/wifi/source_wifi.c:262:9: error: field name not in record or union initializer
+  262 |         .len = strlen(out),
+      |         ^
+D:/esp-now-audio-source/main/wifi/source_wifi.c:262:9: note: (near initialization for 'tx_pkt')
+D:/esp-now-audio-source/main/wifi/source_wifi.c:262:16: warning: excess elements in scalar initializer
+  262 |         .len = strlen(out),
+      |                ^~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:262:16: note: (near initialization for 'tx_pkt')
+D:/esp-now-audio-source/main/wifi/source_wifi.c:264:11: error: implicit declaration of function 'httpd_ws_send_frame' [-Wimplicit-function-declaration]
+  264 |     ret = httpd_ws_send_frame(req, &tx_pkt);
+      |           ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c: In function 'start_runtime_control_server':
+D:/esp-now-audio-source/main/wifi/source_wifi.c:292:10: error: 'httpd_uri_t' {aka 'struct httpd_uri'} has no member named 'is_websocket'
+  292 |         .is_websocket = true,
+      |          ^~~~~~~~~~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:292:25: warning: excess elements in struct initializer
+  292 |         .is_websocket = true,
+      |                         ^~~~
+D:/esp-now-audio-source/main/wifi/source_wifi.c:292:25: note: (near initialization for 'ws')
+[6/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/core/source_core.c.obj
+[7/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/audio/source_audio.c.obj
+ninja: build stopped: subcommand failed.

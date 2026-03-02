@@ -1,0 +1,104 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\esp-now-audio-source\build\bootloader\esp-idf\esptool_py && C:\Users\ngocv\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe "D:/Bluetooth Project/esp-idf/components/partition_table/check_sizes.py" --offset 0x8000 bootloader 0x1000 D:/esp-now-audio-source/build/bootloader/bootloader.bin"
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main_adpcm.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main_adpcm.c.obj 
+ccache C:\Users\ngocv\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20251107\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"8f98866d-dirty\" -DLC3_PLUS=0 -DLC3_PLUS_HR=0 -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/esp-now-audio-source/build/config -ID:/esp-now-audio-source/main -I"D:/Bluetooth Project/esp-idf/components/newlib/platform_include" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/include/freertos" -I"D:/Bluetooth Project/esp-idf/components/freertos/config/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos" -I"D:/Bluetooth Project/esp-idf/components/freertos/esp_additions/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include/soc" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/include/soc/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/dma/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/ldo/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/debug_probe/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/mspi_timing_tuning/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/power_supply/include" -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/port/esp32/." -I"D:/Bluetooth Project/esp-idf/components/esp_hw_support/port/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/heap/include" -I"D:/Bluetooth Project/esp-idf/components/heap/tlsf" -I"D:/Bluetooth Project/esp-idf/components/log/include" -I"D:/Bluetooth Project/esp-idf/components/soc/include" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/soc/esp32/register" -I"D:/Bluetooth Project/esp-idf/components/hal/platform_port/include" -I"D:/Bluetooth Project/esp-idf/components/hal/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/hal/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32/include/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_rom/esp32" -I"D:/Bluetooth Project/esp-idf/components/esp_common/include" -I"D:/Bluetooth Project/esp-idf/components/esp_system/include" -I"D:/Bluetooth Project/esp-idf/components/esp_system/port/soc" -I"D:/Bluetooth Project/esp-idf/components/esp_system/port/include/private" -I"D:/Bluetooth Project/esp-idf/components/xtensa/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/xtensa/include" -I"D:/Bluetooth Project/esp-idf/components/xtensa/deprecated_include" -I"D:/Bluetooth Project/esp-idf/components/lwip/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/include/apps" -I"D:/Bluetooth Project/esp-idf/components/lwip/include/apps/sntp" -I"D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/freertos/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include/arch" -I"D:/Bluetooth Project/esp-idf/components/lwip/port/esp32xx/include/sys" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/include/local" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/wifi_apps/include" -I"D:/Bluetooth Project/esp-idf/components/esp_wifi/wifi_apps/nan_app/include" -I"D:/Bluetooth Project/esp-idf/components/esp_event/include" -I"D:/Bluetooth Project/esp-idf/components/esp_phy/include" -I"D:/Bluetooth Project/esp-idf/components/esp_phy/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_netif/include" -I"D:/Bluetooth Project/esp-idf/components/esp_timer/include" -I"D:/Bluetooth Project/esp-idf/components/driver/deprecated" -I"D:/Bluetooth Project/esp-idf/components/driver/i2c/include" -I"D:/Bluetooth Project/esp-idf/components/driver/touch_sensor/include" -I"D:/Bluetooth Project/esp-idf/components/driver/twai/include" -I"D:/Bluetooth Project/esp-idf/components/driver/touch_sensor/esp32/include" -I"D:/Bluetooth Project/esp-idf/components/esp_pm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_ringbuf/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_gpio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_pcnt/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_gptimer/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_spi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_mcpwm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_ana_cmpr/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_i2s/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdmmc/include" -I"D:/Bluetooth Project/esp-idf/components/sdmmc/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdspi/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_dac/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_rmt/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_tsens/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_sdm/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_i2c/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_uart/include" -I"D:/Bluetooth Project/esp-idf/components/vfs/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_ledc/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_parlio/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_usb_serial_jtag/include" -I"D:/Bluetooth Project/esp-idf/components/esp_driver_twai/include" -I"D:/Bluetooth Project/esp-idf/components/nvs_flash/include" -I"D:/Bluetooth Project/esp-idf/components/esp_partition/include" -I"D:/Bluetooth Project/esp-idf/components/esp_http_server/include" -I"D:/Bluetooth Project/esp-idf/components/http_parser" -ID:/esp-now-audio-source/components/liblc3/include -ID:/esp-now-audio-source/components/liblc3/src -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/esp-now-audio-source=. "-fmacro-prefix-map=D:/Bluetooth Project/esp-idf=/IDF" -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main_adpcm.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main_adpcm.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main_adpcm.c.obj -c D:/esp-now-audio-source/main/main_adpcm.c
+In file included from D:/esp-now-audio-source/main/main_adpcm.c:23:
+D:/esp-now-audio-source/main/main_adpcm.c: In function 'refresh_softap_dns_from_sta':
+D:/esp-now-audio-source/main/main_adpcm.c:371:55: error: passing argument 1 of 'ipaddr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       |
+      |                                                       esp_ip_addr_t * {aka struct _ip_addr *}
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:220:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:5: note: in expansion of macro 'ESP_LOGI'
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |     ^~~~~~~~
+In file included from D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:50,
+                 from D:/Bluetooth Project/esp-idf/components/lwip/include/lwip/sockets.h:8,
+                 from D:/esp-now-audio-source/main/main_adpcm.c:39:
+D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:268:36: note: expected 'const ip_addr_t *' {aka 'const struct ip_addr *'} but argument is of type 'esp_ip_addr_t *' {aka 'struct _ip_addr *'}
+  268 | char *ipaddr_ntoa(const ip_addr_t *addr);
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:55: error: passing argument 1 of 'ipaddr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       |
+      |                                                       esp_ip_addr_t * {aka struct _ip_addr *}
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:221:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:5: note: in expansion of macro 'ESP_LOGI'
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |     ^~~~~~~~
+D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:268:36: note: expected 'const ip_addr_t *' {aka 'const struct ip_addr *'} but argument is of type 'esp_ip_addr_t *' {aka 'struct _ip_addr *'}
+  268 | char *ipaddr_ntoa(const ip_addr_t *addr);
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:55: error: passing argument 1 of 'ipaddr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       |
+      |                                                       esp_ip_addr_t * {aka struct _ip_addr *}
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:222:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  222 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:5: note: in expansion of macro 'ESP_LOGI'
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |     ^~~~~~~~
+D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:268:36: note: expected 'const ip_addr_t *' {aka 'const struct ip_addr *'} but argument is of type 'esp_ip_addr_t *' {aka 'struct _ip_addr *'}
+  268 | char *ipaddr_ntoa(const ip_addr_t *addr);
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:55: error: passing argument 1 of 'ipaddr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       |
+      |                                                       esp_ip_addr_t * {aka struct _ip_addr *}
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:223:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  223 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:5: note: in expansion of macro 'ESP_LOGI'
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |     ^~~~~~~~
+D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:268:36: note: expected 'const ip_addr_t *' {aka 'const struct ip_addr *'} but argument is of type 'esp_ip_addr_t *' {aka 'struct _ip_addr *'}
+  268 | char *ipaddr_ntoa(const ip_addr_t *addr);
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:55: error: passing argument 1 of 'ipaddr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       |
+      |                                                       esp_ip_addr_t * {aka struct _ip_addr *}
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:224:167: note: in definition of macro 'ESP_LOG_LEVEL'
+  224 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                                                       ^~~~~~~~~~~
+D:/Bluetooth Project/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/esp-now-audio-source/main/main_adpcm.c:371:5: note: in expansion of macro 'ESP_LOGI'
+  371 |     ESP_LOGI(TAG, "SoftAP DNS set to %s", ipaddr_ntoa(&dns_main.ip));
+      |     ^~~~~~~~
+D:/Bluetooth Project/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:268:36: note: expected 'const ip_addr_t *' {aka 'const struct ip_addr *'} but argument is of type 'esp_ip_addr_t *' {aka 'struct _ip_addr *'}
+  268 | char *ipaddr_ntoa(const ip_addr_t *addr);
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+D:/esp-now-audio-source/main/main_adpcm.c: At top level:
+D:/esp-now-audio-source/main/main_adpcm.c:318:13: warning: 'clear_wifi_credentials' defined but not used [-Wunused-function]
+  318 | static void clear_wifi_credentials(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

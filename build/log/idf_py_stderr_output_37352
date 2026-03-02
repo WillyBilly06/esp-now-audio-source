@@ -1,0 +1,2 @@
+Command: ninja flash
+fatal: not a git repository: D:/Bluetooth Project/esp-idf/components/openthread/openthread/../../../.git/modules/components/openthread/openthread
